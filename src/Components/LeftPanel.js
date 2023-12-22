@@ -1,13 +1,14 @@
 import React, { forwardRef, useState, useImperativeHandle } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/LeftPanel.css';
 
 const LeftPanel = forwardRef((props, ref) => {
     const [activeSection, setActiveSection] = useState('section-about-me');
 
     useImperativeHandle(ref, () => ({
-        updateActiveSection(newSection){
+        updateActiveSection(newSection) {
             setActiveSection(newSection);
         }
     }));
@@ -30,7 +31,10 @@ const LeftPanel = forwardRef((props, ref) => {
             <div className='left-panel-wrapper'>
                 <div className="left-panel-header">
                     <h1>Hi, I'm Evan</h1>
-                    <p>I develop interactive experiences and write high quality software</p>
+                    <p>
+                        I develop interactive experiences and write high quality software. <br />
+                    </p>
+                    <p className="link-resume">View my full <a className="download-link" href="/files/Resume_EvanSnyder.pdf" download='Resume_EvanSnyder.pdf' target='_blank'>Resume <FontAwesomeIcon icon={faDownload} /></a> </p>
                 </div>
                 <nav className="nav-indicator">
                     <ul>

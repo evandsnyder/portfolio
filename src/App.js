@@ -17,11 +17,8 @@ function App() {
 
   function handleScrollEvent(event) {
     const scrollDelta = event.deltaY;
-    let scroll = 0;
     if (rightPanelRef.current) {
       rightPanelRef.current.scrollTop += scrollDelta;
-      scroll = rightPanelRef.current.scrollTop;
-      console.log(rightPanelRef.current);
     }
 
     const sections = document.querySelectorAll("div[id^='section']");

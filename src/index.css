@@ -20,6 +20,7 @@ code {
   --text-primary: #36454F;
   --text-secondary: #2F4F4F;
   --accent-one: #BF442F;
+  --accent-two: #E0624C;
 }
 [data-theme='dark'] {
   --primary: #5F9EA0;
@@ -28,6 +29,7 @@ code {
   --text-primary: #F0F8FF;
   --text-secondary: #bdc3c7;
   --accent-one: #BF442F;
+  --accent-two: #E0624C;
 }
 
 html, body{
@@ -40,8 +42,4 @@ a:link,
 a:visited {
   text-decoration: none;
   color: var(--text-primary);
-}
-
-a:hover{
-  color: var(--accent-one);
 }

@@ -1,6 +1,6 @@
 import InfoCard from "./InfoCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProjectsPanel() {
     return (
@@ -16,7 +16,7 @@ export default function ProjectsPanel() {
             <InfoCard
                 header="Portfolio Website"
                 subheader=""
-                content="This website! Just a way for me to share the things I've worked on."
+                content="This website! Just a way for me to share some of the things I've worked on."
                 chips={["React", "Web Development"]}
                 href="https://github.com/evandsnyder/portfolio" />
                 <InfoCard
@@ -25,7 +25,7 @@ export default function ProjectsPanel() {
                 content="A Lambda Calculus Interprepeter"
                 chips={["Java", "Lambda Calculus", "Computational Theory"]}
                 href="https://github.com/evandsnyder/Lambda-Calculator" />
-            <p className="section-footer">See more on <a href="https://www.github.com/evandsnyder" target="_blank">GitHub</a>! <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></p>
+            <p className="section-footer">See more on <a className='external-link' href="https://www.github.com/evandsnyder" target="_blank">GitHub <FontAwesomeIcon icon={faUpRightFromSquare} /></a></p>
         </div>
     )
 }

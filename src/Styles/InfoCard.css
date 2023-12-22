@@ -11,24 +11,18 @@
 }
 
 .about-me-header {
+    animation: slideUpFadeIn 0.3s ease forwards;
     animation-delay: .15s;
-    animation: fadeInFromBelow 0.3s ease forwards;
     color: var(--text-primary);
     max-width: 650px;
     text-wrap: wrap;
     margin-left: 10px;
-}
-
-.main-content a{
-    color: var(--primary);
-}
-
-.main-content a:hover {
-    color: var(--secondary);
+    opacity: 0;
 }
 
 .about-me-header p{
     font-size: 0.875rem;
+    font-weight: 300;
 }
 
 
@@ -84,6 +78,7 @@
 .info-card-subheader h5,
 .info-card p {
     margin: 0;
+    font-weight: 300;
 }
 
 .info-card-content{
@@ -151,4 +146,22 @@
 
 .section-footer {
     margin-left: 10px;
+}
+
+.download-link,
+.download-link:visited{
+    color: var(--accent-two);
+}
+
+.download-link:hover{
+    color: var(--accent-one);
+}
+
+.external-link,
+.external-link:visited {
+    color: var(--primary) !important;
+}
+
+.external-link:hover{
+    color: var(--secondary) !important;
 }

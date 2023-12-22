@@ -1,6 +1,7 @@
 .app {
   color: var(--text-primary);
-  background-color: var(--background);
+  background: radial-gradient(var(--background) 60%, black);
+  /*background-color: var(--background);*/
   font-size: large;
   font-weight: bold;
   padding: 20px;

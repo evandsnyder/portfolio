@@ -1,7 +1,10 @@
 import React from 'react';
 import InfoCard from './InfoCard';
+import '../Styles/InfoCard.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
-export default function ExperiencePanel({header, subheader, content, chips}) {
+export default function ExperiencePanel() {
     return (
         <div id='section-experience'>
             
@@ -16,7 +19,8 @@ export default function ExperiencePanel({header, subheader, content, chips}) {
                 oversees the software development lifecycle. Provides technical leadership through 
                 software architecture, and enables team growth through monthly educational sessions.
                 "
-                chips={["C++", "Qt", "Multithreading", "Software Architecture", "Python", "React"]}
+                chips={["C++", "Qt", "Multithreading", "Software Architecture", "Python", "React", "OOP"]}
+                href="https://www.tomorrow.io"
                 />
             <InfoCard
                 prefix={<p>June 2019 - March 2022</p>}
@@ -38,7 +42,7 @@ export default function ExperiencePanel({header, subheader, content, chips}) {
                 chips={["C/C++", "Linux", "Computer Networking"]}
                 href="https://www.goarmy.com/"
                 />
-            <p className="section-footer">Check out my full <a href="">resume</a>!</p>
+            <p className="section-footer">Check out my full <a className="download-link" href="/files/Resume_EvanSnyder.pdf" download='Resume_EvanSnyder.pdf' target='_blank'>Resume <FontAwesomeIcon icon={faDownload} /></a></p>
         </div>
     )
 }

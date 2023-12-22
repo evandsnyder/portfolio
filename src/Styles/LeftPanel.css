@@ -11,7 +11,7 @@
 }
 
 .left-panel {
-    background-color: var(--background);
+    background: transparent;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,10 @@
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.left-panel-header {
+    font-weight: 300;
 }
 
 .nav-indicator ul {
@@ -87,6 +91,7 @@
     justify-content: space-between;
     align-content: center;
     max-width: 450px;
+    padding-left: 10px;
 }
 
 .links {
@@ -95,5 +100,18 @@
 }
 
 .links a {
-    margin: 10px;
+    margin-right: 15px;
+}
+
+.links a:hover{
+    color: var(--secondary);
+}
+
+
+.link-resume a{
+    color: var(--accent-two);
+}
+
+.link-resume:hover a{
+    color: var(--accent-one);
 }
