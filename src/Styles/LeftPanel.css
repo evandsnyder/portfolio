@@ -1,0 +1,99 @@
+@keyframes fadeInFromBelow {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.left-panel {
+    background-color: var(--background);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    flex: 1;
+    overflow-y: none;
+    height: 100vh;
+    animation: fadeInFromBelow 0.3s ease forwards;
+    align-items: center;
+    justify-content: center;
+    max-height: 400px;
+}
+
+.left-panel h1 {
+    margin: 0;
+}
+
+.nav-indicator {
+    margin-bottom: 30px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-indicator ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-indicator ul li {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.active,
+.nav-indicator ul li:hover {
+    font-size: 1.25em;
+    transition: 0.2s ease;
+    color: var(--accent-one);
+}
+
+@media(max-width: 1024px) {
+    .left-panel {
+        justify-content: left;
+        align-items: start;
+        width: 100%;
+    }
+
+    .left-panel-wrapper {
+        justify-content: left;
+        width: fit-content;
+    }
+
+    .nav-indicator {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+
+.left-panel h1 {
+    justify-content: right;
+}
+
+.left-panel-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 450px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links a {
+    margin: 10px;
+}

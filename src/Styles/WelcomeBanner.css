@@ -1,0 +1,34 @@
+.welcome-banner {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-banner h1,
+.welcome-banner p {
+    opacity: 0;
+    animation: slideUpFadeIn 1s ease forwards;
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation-delay: 0.3s;
+}
+
+.welcome-banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation-delay: 0.6s;
+}

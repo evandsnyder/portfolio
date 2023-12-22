@@ -1,0 +1,150 @@
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-me-header {
+    animation-delay: .15s;
+    animation: fadeInFromBelow 0.3s ease forwards;
+    color: var(--text-primary);
+    max-width: 650px;
+    text-wrap: wrap;
+    margin-left: 10px;
+}
+
+.about-me-header a,
+.main-content-footer a{
+    color: var(--primary);
+}
+
+.about-me-header p{
+    font-size: 0.875rem;
+}
+
+.about-me-header a:hover,
+.main-content-footer a:hover {
+    color: var(--secondary);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.portfolio-section {
+    animation: slideUpFadeIn 0.5s ease forwards;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card {
+    opacity: 0;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.2s ease;
+    animation: slideUpFadeIn 0.5s ease forwards;
+    max-width: 650px;
+}
+
+.info-card:hover {
+    background-color: color-mix(in srgb, var(--background) 80%, black);
+    color: var(--text-secondary)
+}
+
+.info-card h3 {
+    margin: 0;
+}
+
+.info-card:hover h3 {
+    color: var(--secondary);
+}
+
+.info-card .info-card-prefix p{
+    color: var(--text-secondary);
+}
+
+.info-card-prefix{
+    grid-area: prefix;
+}
+.info-card-prefix p{
+    font-size: 0.875rem;
+}
+
+.info-card-subheader h5,
+.info-card p {
+    margin: 0;
+}
+
+.info-card-content{
+    font-size: 1em;
+}
+
+.info-card-description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding: 10px 0;
+}
+
+.info-card-subheader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-card-subheader p{
+    text-wrap: nowrap;
+    visibility: visible;
+    font-size: 0.875rem;
+}
+
+.info-card-link{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-header {
+    padding-left: 10px;
+}
+
+.chips {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 1024px){
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .info-card-prefix{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}
+
+.main-content-footer {
+    max-width: 650px;
+    text-wrap: wrap;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}

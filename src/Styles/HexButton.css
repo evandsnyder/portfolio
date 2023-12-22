@@ -1,0 +1,29 @@
+.hexagon-button {
+    background-color: var(--primary);
+    width: 90px; 
+    height: 52px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hexagon-button:before, 
+  .hexagon-button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent #64C7CC transparent;
+  }
+  
+  .hexagon-button:before {
+    top: 0;
+    border-width: 26px 45px 0 45px;
+  }
+  
+  .hexagon-button:after {
+    bottom: 0;
+    border-width: 0 45px 26px 45px;
+  }
