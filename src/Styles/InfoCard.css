@@ -19,19 +19,18 @@
     margin-left: 10px;
 }
 
-.about-me-header a,
-.main-content-footer a{
+.main-content a{
     color: var(--primary);
+}
+
+.main-content a:hover {
+    color: var(--secondary);
 }
 
 .about-me-header p{
     font-size: 0.875rem;
 }
 
-.about-me-header a:hover,
-.main-content-footer a:hover {
-    color: var(--secondary);
-}
 
 .main-content {
     display: flex;
@@ -61,7 +60,6 @@
 
 .info-card:hover {
     background-color: color-mix(in srgb, var(--background) 80%, black);
-    color: var(--text-secondary)
 }
 
 .info-card h3 {
@@ -96,6 +94,7 @@
     font-size: 0.8rem;
     color: var(--text-secondary);
     padding: 10px 0;
+    font-weight: 200;
 }
 
 .info-card-subheader {

@@ -12,7 +12,7 @@ export default function MainContentPanel({innerRef}) {
             <div className="about-me-header" id="section-about-me">
                 <p>When I was , I decided I wanted to learn how computer's work; today,</p>
                 <p>
-                    As a current student in <a href="https://www.vertexschool.com/game-development-program">Vertex School's</a> Game Development Program,
+                    As a current student in <a href="https://www.vertexschool.com/game-development-program">Vertex School's Game Development Program</a>,
                     I am gearing up for a transition into the gaming industry. Challenging problems excite me, if you have one, <a href="mailto:evansnyder16@gmail.com">let's get in touch</a>!
                 </p>
                 <p>Outside of work, I like to brew my own beer, peek out at the universe through my telescope, and play boardgames with my fiancée.</p>
