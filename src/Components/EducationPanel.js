@@ -4,7 +4,8 @@ import InfoCard from './InfoCard';
 export default function EducationPanel() {
     return (
         <div id='section-education'>
-            <h2 className="section-header">My Studies:</h2>
+            <h2 className="section-header">Education</h2>
+            <hr style={{marginLeft: '10px', width: '650px', color: 'var(--accent-one)'}}/>
             <InfoCard
                 prefix={<p>September 2023 - Present</p>}
                 header="Game Development Program"

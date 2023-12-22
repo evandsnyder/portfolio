@@ -7,3 +7,7 @@
     flex-wrap: wrap;
     text-wrap: nowrap;
 }
+
+.chip:hover {
+    color: var(--text-primary);
+}

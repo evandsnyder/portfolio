@@ -4,7 +4,9 @@ import InfoCard from './InfoCard';
 export default function ExperiencePanel({header, subheader, content, chips}) {
     return (
         <div id='section-experience'>
-            <h2 className="section-header">My career so far</h2>
+            
+            <h2 className="section-header">Experience</h2>
+            <hr style={{marginLeft: '10px', width: '650px', color: 'var(--accent-one)'}}/>
             <InfoCard
                 prefix={<p>March 2022 - Present</p>}
                 header="Senior Software Engineer"
@@ -36,7 +38,7 @@ export default function ExperiencePanel({header, subheader, content, chips}) {
                 chips={["C/C++", "Linux", "Computer Networking"]}
                 href="https://www.goarmy.com/"
                 />
-            <p>Check out my full <a href="">resume</a>!</p>
+            <p className="section-footer">Check out my full <a href="">resume</a>!</p>
         </div>
     )
 }

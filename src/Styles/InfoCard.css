@@ -120,6 +120,7 @@
 
 .section-header {
     padding-left: 10px;
+    color: var(--accent-one);
 }
 
 .chips {
@@ -147,4 +148,8 @@
     text-wrap: wrap;
     margin-left: 10px;
     font-size: 0.8rem;
+}
+
+.section-footer {
+    margin-left: 10px;
 }
