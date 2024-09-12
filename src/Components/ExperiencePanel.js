@@ -12,12 +12,25 @@ export default function ExperiencePanel() {
             <hr style={{marginLeft: '10px', width: '650px', color: 'var(--accent-one)'}}/>
             <InfoCard
                 prefix={<p>March 2022 - Present</p>}
+                header="Game Development Instructor"
+                subheader="Vertex School"
+                content="Design comprehensive course content to teach C++ programming and game 
+                development using Unreal Engine. Mentors aspiring game developers, providing 
+                guidance and support throughout their learning journey. Delivers hands-on instruction 
+                in Unreal Engine, helping students build a solid foundation in 
+                programming and game design principles.
+                "
+                chips={["Unreal Engine 5", "C++", "Blueprints", "Game Design"]}
+                href="https://www.vertexschool.com/"
+                />
+            <InfoCard
+                prefix={<p>March 2022 - September 2024</p>}
                 header="Senior Software Engineer"
                 subheader="Tomorrow.io"
-                content="Leads a small team developing performance critical software that runs in space! 
-                Engages with stakeholders to determine requirements, designs software solutions, and
-                oversees the software development lifecycle. Provides technical leadership through 
-                software architecture, and enables team growth through monthly educational sessions.
+                content="Lead a small team developing performance critical software that runs in space! 
+                Engaged with stakeholders to determine requirements, designed software solutions, and
+                oversaw the software development lifecycle. Provided technical leadership through 
+                software architecture, and enabled team growth through monthly educational sessions.
                 "
                 chips={["C++", "Qt", "Multithreading", "Software Architecture", "Python", "React", "OOP"]}
                 href="https://www.tomorrow.io"

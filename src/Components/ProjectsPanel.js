@@ -8,6 +8,12 @@ export default function ProjectsPanel() {
             <h2 className="section-header">Projects</h2>
             <hr style={{ marginLeft: '10px', width: '650px', color: 'var(--accent-one)' }} />
             <InfoCard
+                header="Automation Foundation"
+                subheader=""
+                content="A Satisfactory-esque automation game. Extract raw resources, craft advanced materials, and build an automated factory."
+                chips={["Unreal Engine 5", "C++", "Blueprints", "Game Design"]}
+                href="https://github.com/evandsnyder/AutomationFoundation" />
+            <InfoCard
                 header="Bad Tower Defense"
                 subheader=""
                 content="A Rogue-like, procedural Tower Defense Game! Setup defenses between each round and attempt to survive increasingly difficult waves of enemies."

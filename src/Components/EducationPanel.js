@@ -7,7 +7,7 @@ export default function EducationPanel() {
             <h2 className="section-header">Education</h2>
             <hr style={{marginLeft: '10px', width: '650px', color: 'var(--accent-one)'}}/>
             <InfoCard
-                prefix={<p>September 2023 - Present</p>}
+                prefix={<p>September 2023 - March 2024</p>}
                 header="Game Development Program"
                 subheader="Vertex School"
                 content="Focusing on Game Development using Unreal Engine 5"

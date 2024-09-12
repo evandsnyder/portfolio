@@ -17,8 +17,8 @@ export default function MainContentPanel({innerRef}) {
                     My professional voyage is not just about coding and development; it's about creating experiences that resonate and redefine what's possible.
                 </p>
                 <p>
-                    As a current student in <a className="external-link" href="https://www.vertexschool.com/game-development-program">Vertex School's Game Development Program</a>,
-                    I am honing my skills in Unreal Engine 5 and gearing up for a transition into the gaming industry. 
+                    As an instructor in <a className="external-link" href="https://www.vertexschool.com/game-development-program">Vertex School's Game Development Program</a>,
+                    I am honing my skills in Unreal Engine 5 while guiding others on their creative journeys. 
                     Challenging problems excite me, if you have one, <a className="external-link" href="mailto:evansnyder16@gmail.com">let's get in touch</a>!
                 </p>
                 <p>Outside of work, I like to brew my own beer, gaze out at the universe through my telescope, 
