@@ -11,7 +11,7 @@ export default function ExperiencePanel() {
             <h2 className="section-header">Experience</h2>
             <hr style={{marginLeft: '10px', width: '650px', color: 'var(--accent-one)'}}/>
             <InfoCard
-                prefix={<p>March 2022 - Present</p>}
+                prefix={<p>August 2024 - Present</p>}
                 header="Game Development Instructor"
                 subheader="Vertex School"
                 content="Design comprehensive course content to teach C++ programming and game 
